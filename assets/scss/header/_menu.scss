@@ -11,7 +11,7 @@
     gap: $gap-md;
     justify-content: flex-end;
     @include unlist;
-    font-size: 18px;
+    font-size: 18px; //18px
   }
 
   &__link {
