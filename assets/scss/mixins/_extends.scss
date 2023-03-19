@@ -1,0 +1,6 @@
+@use "../presets" as *;
+
+%container {
+  width: min(100% - $gap-xl, $container-width);
+  margin-inline: auto;
+}

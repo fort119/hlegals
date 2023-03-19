@@ -1,0 +1,22 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.menu {
+  &__btn {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    gap: $gap-md;
+    justify-content: flex-end;
+    @include unlist;
+    font-size: 18px;
+  }
+
+  &__link {
+    display: block;
+    color: $color-white;
+    padding: 0.25em 0;
+  }
+}

@@ -1,0 +1,38 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: $gap;
+
+  a {
+    color: $color-white;
+  }
+
+  &__languages {
+    display: flex;
+    gap: 3px;
+    font-weight: 700;
+    font-size: 12px;
+    letter-spacing: 1px;
+
+    &-link {
+      padding: 5px 6px;
+      border-radius: 8px;
+
+      &.-active {
+        background-color: $color-accent;
+      }
+    }
+  }
+
+  &__locations {
+    font-style: normal;
+  }
+
+  &__phones {
+    font-weight: bold;
+  }
+}
