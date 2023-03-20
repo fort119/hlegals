@@ -1,0 +1,20 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.service__text {
+  max-width: 600px;
+  padding-top: 50px;
+}
+
+.service__heading {
+  font-size: 32px;
+  line-height: 2rem;
+  color: $color-white;
+  margin-bottom: 20px;
+}
+
+.srevice__descr {
+  font-size: 21px;
+  line-height: 1.875rem;
+  color: $color-white;
+}

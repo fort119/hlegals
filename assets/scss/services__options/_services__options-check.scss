@@ -1,0 +1,16 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.services__options-checks {
+  max-width: 525px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-right: 4px solid $color-gray-slider;
+    top: 0;
+    right: 0;
+    bottom: 0;
+  }
+}
