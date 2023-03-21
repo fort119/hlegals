@@ -1,7 +1,8 @@
 @use "../presets" as *;
 @use "../mixins" as *;
 
-.services {
+.abilities {
   background: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   padding: 80px 0;
+  border-radius: 0px 0px 12px 12px;
 }

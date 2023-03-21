@@ -1,0 +1,29 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.best__flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.best__item {
+  max-width: 413px;
+}
+
+.best__picture {
+  margin-bottom: 20px;
+}
+
+.best__item-caption {
+  color: $color-blue-light;
+  font-size: 24px;
+  line-height: 1.75rem;
+  margin-bottom: 15px;
+}
+
+.best__item-text {
+  font-size: 18px;
+  line-height: 1.625rem;
+  color: $color-white;
+}

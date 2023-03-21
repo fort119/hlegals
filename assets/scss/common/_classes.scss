@@ -3,6 +3,11 @@
 
 .services__inner {
   @extend %container;
+  padding-bottom: 80px;
+}
+
+.best__inner {
+  @extend %container;
 }
 
 .visually-hidden {
