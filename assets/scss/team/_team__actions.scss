@@ -1,0 +1,30 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.team__actions {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+
+  &-dot {
+    width: 16px;
+    height: 16px;
+    margin: 0 7px;
+    border: none;
+    border-radius: 50%;
+    background-color: $color-active;
+    opacity: 0.2;
+    cursor: pointer;
+  }
+
+  &-dot:hover {
+    background-color: $color-active;
+    opacity: 0.6;
+  }
+
+  &-dot.active {
+    background-color: $color-active;
+    opacity: 1;
+  }
+}

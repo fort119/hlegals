@@ -22,26 +22,27 @@
           <span class="menu__btn-row"></span>
           <span class="menu__btn-row"></span>
           <span class="menu__btn-row"></span>
+          <span class="menu__btn-row"></span>
         </div>
 
         <ol class="menu__list">
-          <li class="menu__item"><a class="menu__link -active" href="">про нас</a></li>
-          <li class="menu__item"><a class="menu__link" href="">послуги</a></li>
-          <li class="menu__item"><a class="menu__link" href="">команда</a></li>
-          <li class="menu__item"><a class="menu__link" href="">публікації</a></li>
-          <li class="menu__item"><a class="menu__link" href="">контакти</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">про нас</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">послуги</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">команда</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">публікації</a></li>
+          <li class="menu__item"><a class="menu__link" href="#">контакти</a></li>
         </ol>
       </nav>
 
       <nav class="page-header__actions actions">
         <div class="actions__languages">
-          <a class="actions__languages-link -active" href="">УК</a>
-          <a class="actions__languages-link" href="">РУ</a>
-          <a class="actions__languages-link" href="">EN</a>
+          <a class="actions__languages-link -active" href="#">УК</a>
+          <a class="actions__languages-link" href="#">РУ</a>
+          <a class="actions__languages-link" href="#">EN</a>
         </div>
 
         <address class="actions__locations">
-          <a class="actions__locations-link" href="">Одеса, Адміральський пр., 3</a>
+          <a class="actions__locations-link" href="#">Одеса, Адміральський пр., 3</a>
         </address>
 
         <div class="actions__phones">
@@ -50,7 +51,18 @@
 
         <div class="actions__socials">
           <a class="actions__socials-link" href="" target="_blank">
-            <img alt="Facebook" class="actions__socials-image" src="assets/img/Facebook.svg">
+            <svg class="actions__socials-image" width="24" height="24" viewBox="0 0 24 24" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_44519_3655)">
+                <path
+                  d="M24 12.0733C24 5.40541 18.6274 0 12 0C5.37258 0 0 5.40541 0 12.0733C0 18.0995 4.38823 23.0943 10.125 24V15.5633H7.07813V12.0733H10.125V9.41343C10.125 6.38755 11.9165 4.71615 14.6576 4.71615C15.9705 4.71615 17.3438 4.95195 17.3438 4.95195V7.92313H15.8306C14.3399 7.92313 13.875 8.85379 13.875 9.80857V12.0733H17.2031L16.6711 15.5633H13.875V24C19.6118 23.0943 24 18.0995 24 12.0733Z" />
+              </g>
+              <defs>
+                <clipPath id="clip0_44519_3655">
+                  <rect width="24" height="24" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
           </a>
         </div>
       </nav>
@@ -75,7 +87,7 @@
       <article class="services">
 
         <h2 class="visually-hidden">Доступні послуги</h2>
-        <div class="services__inner">
+        <div class="services__inner container">
           <div class="services__options">
 
             <div class="services__options-checks">
@@ -116,7 +128,7 @@
 
         <h2 class="visually-hidden">Детальніше про послуги</h2>
 
-        <div class="best__inner">
+        <div class="best__inner container">
 
           <div class="best__links">
             <a href="#" class="best__link">послуги</a>
@@ -191,10 +203,40 @@
       </article>
     </section>
 
+    <section class="team">
+
+      <h2 class="visually-hidden">Наша команда</h2>
+      <div class="team__inner container">
+        <div class="team__slider">
+          <div class="slide">
+            <div class="slide__images">
+              <img src="assets/img/author.jpg" alt="author" class="slider__image">
+            </div>
+            <div class="slide__text">
+              <div class="slide__links">
+                <a href="#" class="slider__link">команда</a>
+                <img src="assets/img/arrowblue.svg" alt="arrow">
+              </div>
+              <blockquote class="slide__quote">Ми звикли брати на себе відповідальність та завжди гарантуємо чесну,
+                вчасну допомогу, навіть у ситуаціях, коли більшість безсилі.</blockquote>
+              <div class="slide__author">Олександр Олександровський</div>
+              <div class="slide__position">Керуючий партнер</div>
+            </div>
+          </div>
+          <div class="team__actions">
+            <button class="team__actions-dot active"></button>
+            <button class="team__actions-dot"></button>
+            <button class="team__actions-dot"></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer></footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
   <script src="assets/js/main.js"></script>
 </body>
 

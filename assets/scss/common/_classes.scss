@@ -1,13 +1,12 @@
 @use "../presets" as *;
 @use "../mixins" as *;
 
-.services__inner {
+.container {
   @extend %container;
-  padding-bottom: 80px;
 }
 
-.best__inner {
-  @extend %container;
+.services__inner {
+  padding-bottom: 80px;
 }
 
 .visually-hidden {

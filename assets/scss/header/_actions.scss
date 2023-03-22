@@ -4,35 +4,80 @@
 .actions {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+
   gap: $gap;
 
-  a {
-    color: $color-white;
+  @include sm-min {
+    justify-content: flex-end;
+
+    a {
+      color: $color-white;
+    }
+  }
+
+  @include sm {
+    justify-content: space-between;
+
+    a {
+      color: $color-gray-bg-text;
+    }
   }
 
   &__languages {
     display: flex;
-    gap: 3px;
-    font-weight: 700;
-    font-size: 12px;
+
     letter-spacing: 1px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    gap: 3px;
 
     &-link {
       padding: 5px 6px;
+
       border-radius: 8px;
 
       &.-active {
+        color: $color-white;
         background-color: $color-accent;
       }
+    }
+
+    &-link:hover {
+      background-color: $color-gray-bg-alt;
+      color: $color-gray-bg-text;
     }
   }
 
   &__locations {
     font-style: normal;
+
+    @include md {
+      display: none;
+    }
   }
 
   &__phones {
     font-weight: bold;
   }
+
+  &__socials {
+    @include sm {
+      display: none;
+    }
+
+    &-image {
+      fill: $color-white;
+    }
+
+    &-image:hover {
+      fill: $color-active;
+      transition: 0.3s;
+    }
+
+  }
+
+
+
 }

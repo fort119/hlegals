@@ -3,45 +3,67 @@
 
 .page-header {
   position: relative;
+
   background: $liner-gradient;
 
-  &::before {
-    width: 418px;
-    height: 318px;
-    content: "";
-    background-image: url(../img/Frame2.svg);
-    background-repeat: no-repeat;
-    background-position: 100% 100%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+  @include xl-min {
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
 
-  &::after {
-    width: 376px;
-    height: 100px;
-    content: "";
-    background-image: url(../img/Frame2.svg);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+      width: 418px;
+      height: 318px;
+
+      content: "";
+
+      background-image: url(../img/Frame2.svg);
+      background-repeat: no-repeat;
+      background-position: 100% 100%;
+    }
+
+    &::after {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+
+      width: 376px;
+      height: 100px;
+
+      content: "";
+
+      background-image: url(../img/Frame2.svg);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+    }
   }
 
   &__grid {
     position: absolute;
-    top: 50px;
-    left: 0;
-    right: 0;
     z-index: 2;
+    right: 0;
+    left: 0;
 
     display: grid;
-    grid-template-areas: "logo actions" "logo menu";
-    grid-template-columns: auto 1fr;
-    gap: $gap-sm $gap;
 
     @extend %container;
+    grid-template-columns: auto 1fr;
+
+    @include sm-min {
+      top: 50px;
+
+      gap: $gap-sm $gap;
+      grid-template-areas: "logo actions" "logo menu";
+    }
+
+    @include sm {
+      top: $gap;
+
+      align-items: center;
+
+      gap: $gap;
+      grid-template-areas: "actions actions" "logo menu";
+    }
   }
 
   &__logo {
@@ -58,42 +80,53 @@
 
   &__content {
     position: relative;
-    min-height: 100vh;
+
     display: flex;
+    overflow: hidden;
     align-items: center;
     justify-content: center;
-    overflow: hidden;
 
-    &::before {
-      content: "";
-      background-image: url(../img/Frame2.svg);
-      background-repeat: no-repeat;
-      background-position: 50% 100%;
-      @include abs-position;
+    min-height: 100vh;
+
+    @include md-min {
+      &::before {
+        content: "";
+
+        background-image: url(../img/Frame2.svg);
+        background-repeat: no-repeat;
+        background-position: 50% 100%;
+
+        @include abs-position;
+      }
     }
 
     &::after {
-      content: "";
-      background: $liner-gradient2;
-      @include abs-position(calc(100% - 200px));
       z-index: 1;
+
+      content: "";
+
+      background: $liner-gradient2;
+
+      @include abs-position(calc(100% - 200px));
     }
 
     &-title {
-      margin: 0;
       position: absolute;
+      z-index: 1;
       top: 50%;
       left: 50%;
-      z-index: 1;
+
+      width: min(100% - $gap-xl, 620px);
+      margin: 0;
+
       transform: translate(-50%, -50%);
+      text-align: center;
+
+      color: $color-white;
 
       font-size: 38px;
       font-weight: 500;
       line-height: 45px;
-      text-align: center;
-      color: $color-white;
-
-      width: min(100% - $gap-xl, 620px);
     }
 
     &-image {
@@ -104,10 +137,11 @@
 
   &__button {
     position: absolute;
+    z-index: 2;
     bottom: $gap;
     left: 50%;
-    transform: translateX(-50%);
-    z-index: 2;
+
     cursor: pointer;
+    transform: translateX(-50%);
   }
 }
