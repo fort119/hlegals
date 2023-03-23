@@ -4,4 +4,8 @@
 .services__options {
   display: flex;
   gap: $gap-xl;
+
+  @include lg {
+    display: block;
+  }
 }

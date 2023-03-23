@@ -1,0 +1,38 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.mobile-dots {
+  display: none;
+
+  @include lg {
+    display: flex;
+    gap: 14px;
+    justify-content: center;
+  }
+
+  &__control {
+    font-size: 1px;
+    color: transparent;
+    height: 16px;
+    width: 16px;
+    background-color: $color-active;
+    opacity: 0.2;
+    border-radius: 50%;
+  }
+}
+
+.mobile-subheading {
+  display: none;
+
+  @include lg {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #f0145a;
+    background: linear-gradient(90.13deg, #EF8080 0.84%, #F0145A 99.96%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 10px;
+  }
+}

@@ -4,6 +4,12 @@
 .service__text {
   max-width: 600px;
   padding-top: 50px;
+  display: none;
+
+  @include xx {
+    margin-bottom: 20px;
+    min-height: 410px;
+  }
 }
 
 .service__heading {
@@ -11,10 +17,20 @@
   line-height: 2rem;
   color: $color-white;
   margin-bottom: 20px;
+
+  @include xx {
+    font-size: 22px;
+    line-height: 1.625rem;
+  }
 }
 
 .srevice__descr {
   font-size: 21px;
   line-height: 1.875rem;
   color: $color-white;
+
+  @include xx {
+    font-size: 18px;
+    line-height: 1.625rem;
+  }
 }
