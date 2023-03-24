@@ -4,6 +4,9 @@
 .services__options-checks {
   max-width: 525px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
 
   &::after {
     content: "";
