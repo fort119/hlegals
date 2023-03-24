@@ -7,8 +7,12 @@
   border-radius: 0px 0px 12px 12px;
   position: relative;
 
-  @include lg {
+  @include lg-xx {
     padding: 40px 20px;
+  }
+
+  @include xx {
+    padding: 40px 0 20px 20px;
   }
 
   &::after {

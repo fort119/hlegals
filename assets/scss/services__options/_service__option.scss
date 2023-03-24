@@ -1,7 +1,7 @@
 @use "../presets" as *;
 @use "../mixins" as *;
 
-.service__option {
+.services__option {
   font-size: 42px;
   line-height: 3.125rem;
   display: block;
@@ -10,14 +10,34 @@
   cursor: pointer;
   text-align: right;
   padding-right: 40px;
+  border-right: 4px solid transparent;
 }
 
-.service__option+.service__option {
+.services__option+.services__option {
   padding-top: 20px;
 }
 
-.service__dot {
+.service-dot {
   display: none;
+  transition: 0.3s;
+}
+
+//gradient when hover
+.service-dot-1:hover~.services__options-checks #serv-opt1 {
+  @extend %slide-hover;
+
+}
+
+.service-dot-2:hover~.services__options-checks #serv-opt2 {
+  @extend %slide-hover;
+}
+
+.service-dot-3:hover~.services__options-checks #serv-opt3 {
+  @extend %slide-hover;
+}
+
+.service-dot-4:hover~.services__options-checks #serv-opt4 {
+  @extend %slide-hover;
 }
 
 // gradient when checked

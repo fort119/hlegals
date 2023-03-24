@@ -5,14 +5,43 @@
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
+
+  @media (max-width: 1360px) {
+    justify-content: center;
+  }
+
+  @include lg-xx {
+    justify-content: center;
+  }
 }
 
 .best__item {
   max-width: 413px;
+
+  &-header {
+    @include xx {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+  }
+
+  &-picture {
+    @include xx {
+      width: 64px;
+      height: 64px;
+    }
+  }
 }
 
 .best__picture {
   margin-bottom: 20px;
+
+  @include xx {
+    margin: 0;
+  }
+
 }
 
 .best__item-caption {
@@ -20,10 +49,21 @@
   font-size: 24px;
   line-height: 1.75rem;
   margin-bottom: 15px;
+
+  @include xx {
+    font-size: 18px;
+    line-height: 1.312rem;
+    margin: 0;
+  }
 }
 
 .best__item-text {
   font-size: 18px;
   line-height: 1.625rem;
   color: $color-white;
+
+  @include xx {
+    font-size: 16px;
+    line-height: 1.375rem;
+  }
 }

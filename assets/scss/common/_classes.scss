@@ -3,6 +3,10 @@
 
 .container {
   @extend %container;
+
+  @include xx {
+    margin: 0;
+  }
 }
 
 .services__inner {
