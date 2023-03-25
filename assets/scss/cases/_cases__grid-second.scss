@@ -1,0 +1,28 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.cases__grid-second {
+  display: grid;
+  grid-template-columns: 1fr 1.4fr 1.7fr;
+  gap: 2px;
+
+  @media (max-width: 883px) {
+    display: block;
+  }
+}
+
+.item-repres {
+  border-radius: 0 0 0 12px;
+
+  @media (max-width: 883px) {
+    border-radius: 0;
+  }
+}
+
+.item-acomp3 {
+  border-radius: 0 0 12px 0;
+
+  @media (max-width: 883px) {
+    border-radius: 0 0 12px 12px;
+  }
+}

@@ -1,0 +1,88 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.cases__grid-first {
+  display: grid;
+  grid-template-columns: 0.95fr 1fr 0.95fr;
+  grid-template-rows: auto;
+  gap: 2px;
+  grid-template-areas: "item-capt item-prep item-acomp2"
+    "item-acomp item-prep item-acomp2";
+  margin-bottom: 2px;
+
+  @media (max-width: 883px) {
+    display: block;
+  }
+}
+
+.cases__grid-item {
+  background-color: $color-gray-bg;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 48px 20px 20px;
+  transition: 0.3s;
+
+  @media (max-width: 883px) {
+    margin-bottom: 2px;
+  }
+
+  @include xx {
+    padding: 20px;
+  }
+
+  &:hover {
+    background-color: $color-gray-bg-alt;
+  }
+}
+
+.item-capt {
+  grid-area: item-capt;
+  color: $color-accent;
+  font-size: 14px;
+  padding: 20px;
+  border-radius: 12px 0 0 0;
+
+  @media (max-width: 883px) {
+    border-radius: 12px 12px 0 0;
+  }
+
+  &:hover {
+    background-color: $color-gray-bg;
+  }
+}
+
+.item-acomp {
+  grid-area: item-acomp;
+}
+
+.item-prep {
+  grid-area: item-prep;
+}
+
+.item-acomp2 {
+  grid-area: item-acomp2;
+  border-radius: 0 12px 0 0;
+
+  @media (max-width: 883px) {
+    border-radius: 0;
+  }
+}
+
+.cases__grid-caption {
+  font-size: 24px;
+  line-height: 1.75rem;
+  color: $color-primary-soft;
+  margin-bottom: 20px;
+
+  @include xx {
+    font-size: 18px;
+    line-height: 1.312rem;
+    margin-bottom: 10px;
+  }
+}
+
+.cases__grid-link {
+  font-size: 18px;
+  color: $color-gray-bg-text;
+}

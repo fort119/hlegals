@@ -3,4 +3,8 @@
 
 .team {
   padding: 60px 0 40px;
+
+  @include xx {
+    padding: 40px 0 30px;
+  }
 }

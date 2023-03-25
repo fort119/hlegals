@@ -7,6 +7,10 @@
   justify-content: center;
   gap: 14px;
 
+  @include xx {
+    padding-top: 15px;
+  }
+
   &-dot {
     width: 16px;
     height: 16px;

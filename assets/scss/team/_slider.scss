@@ -7,8 +7,23 @@
   background-color: $color-gray-bg;
   border-radius: 12px;
 
+  @include lg {
+    display: block;
+    padding: 20px;
+  }
+
+  &__images {
+    @include lg {
+      display: none;
+    }
+  }
+
   &__text {
     padding-top: 40px;
+
+    @include lg {
+      padding: 0;
+    }
   }
 
   &__links {
@@ -29,12 +44,41 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 20px;
+
+    @media (max-width: 1050px) {
+      font-size: 36px;
+      line-height: 2.68rem;
+    }
+
+    @include lg {
+      margin-bottom: 10px;
+    }
+
+    @include xx {
+      font-size: 32px;
+      line-height: 2.375rem;
+    }
+
   }
 
   &__author {
-    font-size: 18px;
     color: $color-gray-bg-text;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    &-image {
+      display: none;
+
+      @include lg {
+        display: block;
+      }
+    }
+  }
+
+  &__name {
     margin-bottom: 5px;
+    font-size: 18px;
   }
 
   &__position {
