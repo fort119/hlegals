@@ -1,0 +1,42 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.news__action {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 200px;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(245, 245, 250, 0)), color-stop(86.5%, #F5F5FA));
+  background: linear-gradient(180deg, rgba(245, 245, 250, 0) 0%, #F5F5FA 86.5%);
+
+  @include xx {
+    background: transparent;
+  }
+
+  &-button {
+    width: 250px;
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    transform: translateX(-50%);
+    padding: 16px 0;
+    border: none;
+    border-radius: 12px;
+    background-color: $color-active;
+    box-shadow: 0px 0px 20px rgb(36 163 255 / 50%);
+    font-size: 14px;
+    font-weight: 700;
+    color: $color-white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: $color-active-hover;
+    }
+
+    &:active {
+      background-color: $color-active-active;
+      box-shadow: none;
+    }
+  }
+}

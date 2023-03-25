@@ -1,0 +1,7 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.news__content {
+  columns: 3 413px;
+  column-gap: 40px;
+}

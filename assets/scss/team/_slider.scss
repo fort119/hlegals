@@ -33,6 +33,10 @@
     text-transform: uppercase;
   }
 
+  &__link:hover {
+    color: $color-active-hover;
+  }
+
   &__quote {
     max-width: 827px;
     font-weight: 700;

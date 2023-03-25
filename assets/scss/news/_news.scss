@@ -1,0 +1,29 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.news {
+  background-color: $color-gray-bg;
+  padding-top: 40px;
+
+  &__inner {
+    height: 882px;
+    overflow: hidden;
+    position: relative;
+    padding-top: 40px;
+  }
+
+  &__links {
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+  }
+
+  &__caption {
+    max-width: max-content;
+    margin-bottom: 40px;
+
+    @include xx {
+      margin-bottom: 20px;
+    }
+  }
+}
