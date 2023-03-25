@@ -1,0 +1,79 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.footer__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+
+  @include xx {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+}
+
+.footer__address {
+  display: flex;
+  gap: 47px;
+
+  @include xx {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  &-info {
+    font-weight: 700;
+    font-style: normal;
+    color: $color-primary;
+  }
+
+  &-link {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.3s;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
+
+.contacts {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+
+  @include xx {
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  &__phone {
+    font-weight: 700;
+    color: $color-primary;
+  }
+
+  &__email {
+    font-weight: 700;
+    transition: 0.3s;
+
+    &:hover {
+      color: $color-accent;
+    }
+  }
+}
+
+.contacts__social-logo {
+  fill: #24A3FF;
+  transition: 0.3s;
+}
+
+.contacts__social-logo:hover {
+  fill: $color-accent;
+}

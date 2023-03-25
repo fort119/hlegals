@@ -1,0 +1,7 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.footer__copy-link {
+  color: $color-gray-bg-text;
+  padding-left: 20px;
+}

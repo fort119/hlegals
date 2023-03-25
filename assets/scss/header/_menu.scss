@@ -87,23 +87,22 @@
     @include md {
       position: absolute;
       top: 100%;
-      right: 0;
-      left: 0;
-
+      right: -20px;
+      left: -21px;
+      border-radius: 12px;
       display: none;
 
-      padding: $gap;
+      padding: $gap $gap 9px;
 
       text-align: center;
 
-      background-color: rgba($color-primary, 0.9);
+      background-color: $color-white;
       box-shadow: 1px 3px 10px rgba($color-black, 0.5);
     }
   }
 
   &__link {
     display: block;
-
     color: $color-white;
 
     @include md-min {
@@ -112,6 +111,11 @@
 
     @include md {
       padding: 0.5em 1em;
+      border-radius: 12px;
+      padding: 7px 0 9px;
+      color: $color-active;
+      background-color: $color-gray-bg;
+      margin-bottom: 11px;
     }
 
     &.-active {
