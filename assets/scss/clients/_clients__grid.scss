@@ -1,0 +1,97 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.clients__caption {
+  text-align: center;
+  font-size: 14px;
+  color: $color-primary;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.clients__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+  @include lg-md {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @include md {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  &-picture {
+    text-align: center;
+  }
+}
+
+.clients__grid-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  padding: 0 20px;
+
+  @include lg-xx {
+    height: 100px;
+  }
+
+  @include xx {
+    height: 90px;
+  }
+}
+
+.item-hillel {
+  background-color: #1C4280;
+}
+
+.item-wanna {
+  background-color: #143646;
+}
+
+.item-tap {
+  background-color: #F48B30;
+}
+
+.item-look {
+  background-color: #9E4DC3;
+}
+
+.item-oran {
+  background-color: #FD9339;
+}
+
+.item-adt {
+  background-color: E2E2E4;
+}
+
+.item-click {
+  background-color: #C71C36;
+}
+
+.item-eco {
+  background-color: #DCF3F9;
+}
+
+.item-infa {
+  background-color: #EAEAEA;
+}
+
+.item-city {
+  background-color: #282240;
+}
+
+.item-art {
+  background-color: #1D4568;
+}
+
+.item-ult {
+  background-color: #000000;
+}
+
+.clients__logo {
+  @include lg {
+    width: 100%;
+  }
+}
