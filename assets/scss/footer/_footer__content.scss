@@ -11,10 +11,11 @@
   padding: 32px 0 40px;
   border-top: 4px solid $color-gray-bg-separator;
 
-  @include xx {
+  @media (max-width: 799px) {
     flex-direction: column;
     gap: 20px;
     justify-content: center;
     text-align: center;
+    padding: 20px 0 100px;
   }
 }

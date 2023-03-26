@@ -17,6 +17,23 @@
   display: flex;
   gap: 47px;
 
+  @media (max-width: 847px) and (min-width: 800px) {
+    gap: 20px;
+    align-items: flex-end;
+  }
+
+  // @media (min-width: 800px) {
+  //   gap: 20px;
+  //   align-items: flex-end;
+  // }
+
+  @media (max-width: 799px) {
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
   @include xx {
     flex-direction: column;
     gap: 10px;
@@ -47,6 +64,10 @@
   display: flex;
   gap: 20px;
   align-items: center;
+
+  @media (max-width: 799px) {
+    justify-content: center;
+  }
 
   @include xx {
     flex-direction: column;

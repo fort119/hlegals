@@ -9,6 +9,10 @@
     overflow: hidden;
     position: relative;
     padding-top: 40px;
+
+    @include xx {
+      padding-top: $gap;
+    }
   }
 
   &__links {
