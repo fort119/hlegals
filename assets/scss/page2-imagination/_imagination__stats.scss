@@ -1,0 +1,46 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+
+.imagination__stats {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  border-left: 4px solid $color-gray-bg-separator;
+  padding-left: 20px;
+
+  @include xx {
+    gap: 15px;
+    border-top: 4px solid $color-gray-bg-separator;
+    border-left: none;
+    padding: 10px 0 0 0;
+  }
+}
+
+.imagination__stats-item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 391px;
+}
+
+.imagination__stats-head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.imagination__stats-number {
+  font-weight: 700;
+  font-size: 36px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.imagination__stats-descr {
+  font-size: 18px;
+  line-height: 1.312rem;
+  color: $color-primary;
+}

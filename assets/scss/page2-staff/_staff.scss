@@ -1,0 +1,36 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.staff {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 438px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  margin-bottom: 80px;
+
+  @include xx {
+    min-height: 290px;
+    margin-bottom: 20px;
+  }
+}
+
+.staff__caption {
+  padding: 0 20px;
+  font-size: 96px;
+  font-weight: 700;
+  color: $color-white;
+  text-transform: uppercase;
+  letter-spacing: 63px;
+  opacity: 0.8;
+  text-shadow: 0px 15px 30px rgb(40 40 86 / 80%);
+  text-align: center;
+
+  @include xx {
+    letter-spacing: 20px;
+    font-size: 36px;
+  }
+}

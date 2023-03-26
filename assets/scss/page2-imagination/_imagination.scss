@@ -1,0 +1,14 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.imagination {
+  background-color: $color-white;
+}
+
+.imagination__inner {
+  padding: 80px 0 100px;
+
+  @include xx {
+    padding: 20px 0 25px;
+  }
+}

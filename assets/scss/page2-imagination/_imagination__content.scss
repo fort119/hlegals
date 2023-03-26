@@ -1,0 +1,13 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.imagination__content {
+  display: flex;
+  gap: 42px;
+  align-items: flex-start;
+
+  @include xx {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

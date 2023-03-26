@@ -1,0 +1,78 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.header-services {
+  position: relative;
+  background-color: $color-white;
+
+  &__inner {
+    padding-top: 50px;
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+
+    @include sm-min {
+      top: 50px;
+
+      gap: $gap-sm $gap;
+      grid-template-areas: "logo actions" "logo menu";
+    }
+
+    @include sm {
+      top: $gap;
+
+      align-items: center;
+
+      gap: $gap;
+      grid-template-areas: "actions actions" "logo menu";
+    }
+  }
+
+  &__logo {
+    grid-area: logo;
+    display: flex;
+    // gap: 26px;
+  }
+
+  &__menu {
+    grid-area: menu;
+  }
+
+  &__actions {
+    grid-area: actions;
+  }
+}
+
+.logo-text {
+  position: relative;
+  padding-left: 21px;
+  padding-right: 46px;
+  font-size: 38px;
+  font-weight: 400;
+  color: $color-primary;
+}
+
+.logo-text::before {
+  position: absolute;
+  left: 0;
+  content: '';
+  width: 21px;
+  height: 46px;
+  background: url(../../img/Slash4.png) no-repeat;
+  background-size: cover;
+}
+
+.logo-text::after {
+  position: absolute;
+  content: '';
+  width: 41px;
+  height: 46px;
+  background: url(../../img/SymbolLongleg.svg) no-repeat;
+  background-size: cover;
+}
+
+.menu__link-blue {
+  color: $color-active;
+}

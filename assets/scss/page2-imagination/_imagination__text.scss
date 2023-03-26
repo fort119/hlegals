@@ -1,0 +1,39 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.imagination__text {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 641px;
+
+  @include xx {
+    flex-direction: column;
+  }
+}
+
+.imagination__caption {
+  max-width: max-content;
+  font-size: 42px;
+  line-height: 3.25rem;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+
+  @include xx {
+    font-size: 32px;
+    line-height: 2.375rem;
+  }
+}
+
+.imagination__descr {
+  color: #000000;
+  font-size: 21px;
+  line-height: 1.875rem;
+
+  @include xx {
+    font-size: 18px;
+    line-height: 1.625rem;
+  }
+}

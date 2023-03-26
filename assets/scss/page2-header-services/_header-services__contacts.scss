@@ -1,0 +1,30 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.actions {
+  &__languages {
+
+    &-link.-dark {
+      color: $color-gray-bg-text;
+    }
+  }
+
+  &__locations-link.-dark {
+    color: $color-gray-bg-text;
+  }
+
+  &__phones-link.-dark {
+    color: $color-gray-bg-text;
+  }
+
+  &__socials {
+    &-image.-dark {
+      fill: $color-gray-bg-text;
+    }
+
+    &-image.-dark:hover {
+      fill: $color-active;
+    }
+  }
+
+}
