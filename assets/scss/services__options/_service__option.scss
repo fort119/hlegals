@@ -19,13 +19,11 @@
 
 .service-dot {
   display: none;
-  transition: 0.3s;
 }
 
 //gradient when hover
 .service-dot-1:hover~.services__options-checks #serv-opt1 {
   @extend %slide-hover;
-
 }
 
 .service-dot-2:hover~.services__options-checks #serv-opt2 {

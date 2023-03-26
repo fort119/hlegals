@@ -20,7 +20,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 48px 20px 20px;
+  padding: 20px 20px 20px;
   transition: 0.3s;
 
   @media (max-width: 883px) {
@@ -40,7 +40,7 @@
   grid-area: item-capt;
   color: $color-accent;
   font-size: 14px;
-  padding: 20px;
+  padding: 18px;
   border-radius: 12px 0 0 0;
 
   @media (max-width: 883px) {
@@ -54,6 +54,7 @@
 
 .item-acomp {
   grid-area: item-acomp;
+  padding-top: 48px;
 }
 
 .item-prep {

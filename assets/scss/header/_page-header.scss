@@ -143,5 +143,14 @@
 
     cursor: pointer;
     transform: translateX(-50%);
+    transition: 0.3s;
+
+    &:hover .page-header__button-arrow {
+      stroke: $color-active-hover;
+    }
+  }
+
+  .page-header__button-arrow {
+    transition: 0.3s;
   }
 }

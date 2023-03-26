@@ -120,6 +120,7 @@
 
     &.-active {
       color: $color-accent;
+      border-bottom: 2px solid $color-accent;
     }
 
   }
@@ -127,5 +128,11 @@
   &__link:hover {
     color: $color-accent;
     transition: 0.3s;
+  }
+
+  &__link:active {
+    transition: 0s;
+    color: $color-accent;
+    border-bottom: 2px solid $color-accent;
   }
 }
