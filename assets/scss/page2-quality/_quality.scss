@@ -1,0 +1,57 @@
+@use "../presets" as *;
+@use "../mixins" as *;
+
+.quality {
+  padding-bottom: 93px;
+
+  @include xx {
+    padding-bottom: 40px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+    justify-content: center;
+
+    @include xx {
+      flex-direction: column-reverse;
+      gap: 20px;
+    }
+  }
+
+  &__caption {
+    max-width: 414px;
+    background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 42px;
+    line-height: 3.125rem;
+
+    @include xx {
+      font-size: 33px;
+      line-height: 2.375rem;
+    }
+  }
+
+  &__text {
+    font-size: 21px;
+    line-height: 1.875rem;
+    max-width: 641px;
+
+    @include xx {
+      font-size: 18px;
+      line-height: 1.625rem;
+    }
+  }
+
+  &__span {
+    display: block;
+    margin: 30px 0;
+
+    @include xx {
+      margin: 20px 0;
+    }
+  }
+}

@@ -5,6 +5,7 @@
   display: flex;
   gap: 42px;
   align-items: flex-start;
+  justify-content: center;
 
   @include xx {
     flex-direction: column;
