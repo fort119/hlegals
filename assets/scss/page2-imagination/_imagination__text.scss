@@ -7,6 +7,10 @@
   gap: 20px;
   max-width: 641px;
 
+  @include lg {
+    max-width: 560px;
+  }
+
   @include xx {
     flex-direction: column;
   }
@@ -21,6 +25,10 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
 
+  @media (max-width: 960px) and (min-width: 420px) {
+    font-size: 38px;
+  }
+
   @include xx {
     font-size: 32px;
     line-height: 2.375rem;
@@ -31,6 +39,10 @@
   color: #000000;
   font-size: 21px;
   line-height: 1.875rem;
+
+  @media (max-width: 960px) and (min-width: 420px) {
+    font-size: 19px;
+  }
 
   @include xx {
     font-size: 18px;

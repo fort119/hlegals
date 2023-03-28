@@ -13,35 +13,60 @@
     display: grid;
     grid-template-columns: auto 1fr;
 
-    @include sm-min {
-      top: 50px;
+    top: 50px;
 
-      gap: $gap-sm $gap;
-      grid-template-areas: "logo actions" "logo menu";
+    gap: $gap-sm $gap;
+    grid-template-areas: "logo contacts" "logo menu";
+
+    @include lg {
+      top: 50px;
+      gap: 15px $gap;
+      grid-template-areas: "contacts contacts" "logo menu";
+    }
+
+    @media (max-width: 845px) and (min-width: 768px) {
+      top: 50px;
+      gap: 15px $gap;
+      grid-template-areas: "contacts contacts" "logo logo" "menu menu";
+    }
+
+    @media (max-width: 768px) {
+      align-items: center;
     }
 
     @include sm {
       top: $gap;
-
-      align-items: center;
-
       gap: $gap;
-      grid-template-areas: "actions actions" "logo menu";
+      grid-template-areas: "contacts contacts" "logo menu";
     }
   }
 
   &__logo {
     grid-area: logo;
     display: flex;
-    // gap: 26px;
   }
 
   &__menu {
     grid-area: menu;
   }
 
-  &__actions {
-    grid-area: actions;
+  &-actions {
+    grid-area: contacts;
+  }
+
+
+}
+
+.menu__list.secondary-list {
+  @media (max-width: 845px) and (min-width: 768px) {
+    justify-content: flex-start;
+  }
+}
+
+.logo__image {
+
+  @include xx {
+    width: 77.5px;
   }
 }
 
@@ -52,16 +77,28 @@
   font-size: 38px;
   font-weight: 400;
   color: $color-primary;
+
+  @include xx {
+    font-size: 19px;
+    line-height: 1.375rem;
+    padding-left: 10px;
+    padding-right: 21px;
+  }
 }
 
 .logo-text::before {
   position: absolute;
   left: 0;
   content: '';
-  width: 21px;
-  height: 46px;
-  background: url(../../img/forheader.svg) no-repeat;
+  width: 22px;
+  height: 47px;
+  background: url(../img/forheader.svg) no-repeat;
   background-size: cover;
+
+  @include xx {
+    width: 11px;
+    height: 24px;
+  }
 }
 
 .logo-text::after {
@@ -69,10 +106,23 @@
   content: '';
   width: 41px;
   height: 46px;
-  background: url(../../img/small-p.svg) no-repeat;
+  background: url(../img/small-p.svg) no-repeat;
   background-size: cover;
+
+  @include xx {
+    width: 21px;
+    height: 24px;
+  }
 }
 
 .menu__link-blue {
   color: $color-active;
+}
+
+.btn-row-white {
+  background-color: $color-primary;
+}
+
+.header__services-actions {
+  grid-area: contacts;
 }

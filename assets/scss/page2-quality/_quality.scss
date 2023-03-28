@@ -14,8 +14,12 @@
     gap: 40px;
     justify-content: center;
 
-    @include xx {
+    @media (max-width: 837px) {
+      gap: 30px;
       flex-direction: column-reverse;
+    }
+
+    @include xx {
       gap: 20px;
     }
   }
@@ -29,6 +33,15 @@
     font-size: 42px;
     line-height: 3.125rem;
 
+    @media (max-width: 960px) and (min-width: 420px) {
+      font-size: 34px;
+    }
+
+    @include xx {
+      font-size: 32px;
+      line-height: 2.375rem;
+    }
+
     @include xx {
       font-size: 33px;
       line-height: 2.375rem;
@@ -40,6 +53,19 @@
     line-height: 1.875rem;
     max-width: 641px;
 
+    @include lg {
+      max-width: 560px;
+    }
+
+    @media (max-width: 960px) and (min-width: 420px) {
+      font-size: 19px;
+    }
+
+    @include xx {
+      font-size: 18px;
+      line-height: 1.625rem;
+    }
+
     @include xx {
       font-size: 18px;
       line-height: 1.625rem;
@@ -49,6 +75,10 @@
   &__span {
     display: block;
     margin: 30px 0;
+
+    @media (max-width: 837px) {
+      margin: 25px 0;
+    }
 
     @include xx {
       margin: 20px 0;

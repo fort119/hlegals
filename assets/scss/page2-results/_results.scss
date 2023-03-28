@@ -19,6 +19,7 @@
     display: flex;
     gap: 40px;
     margin-bottom: 13px;
+    justify-content: center;
 
     @include xx {
       gap: 20px;
@@ -34,21 +35,27 @@
     width: 300px;
     background-color: $color-white;
 
-    @include xx {
+    @include xs {
       height: 57px;
       width: 157px;
     }
   }
 
   &__image {
-    @include xx {
+    @include xs {
       height: 31px;
     }
   }
 }
 
+.mark-clear-middle {
+  @include lg-sm {
+    display: none;
+  }
+}
+
 .mark-clear {
-  @include xx {
+  @include md {
     display: none;
   }
 }
@@ -56,7 +63,7 @@
 .dot-tohide {
   display: none;
 
-  @include xx {
+  @include md {
     display: block;
   }
 }

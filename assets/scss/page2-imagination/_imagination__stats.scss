@@ -9,10 +9,16 @@
   border-left: 4px solid $color-gray-bg-separator;
   padding-left: 20px;
 
-  @include xx {
-    gap: 15px;
+  @media (max-width: 837px) {
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0 0 0;
     border-top: 4px solid $color-gray-bg-separator;
     border-left: none;
+  }
+
+  @include xx {
+    gap: 15px;
     padding: 10px 0 0 0;
   }
 }

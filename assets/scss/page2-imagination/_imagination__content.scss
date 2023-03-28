@@ -7,8 +7,11 @@
   align-items: flex-start;
   justify-content: center;
 
-  @include xx {
+  @media (max-width: 837px) {
     flex-direction: column;
+  }
+
+  @include xx {
     gap: 20px;
   }
 }

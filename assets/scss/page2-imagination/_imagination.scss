@@ -8,6 +8,10 @@
 .imagination__inner {
   padding: 80px 0 100px;
 
+  @include lg-xx {
+    padding: 40px 0 50px;
+  }
+
   @include xx {
     padding: 20px 0 25px;
   }
