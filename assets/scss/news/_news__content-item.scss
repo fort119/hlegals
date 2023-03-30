@@ -40,6 +40,8 @@
   font-weight: 700;
   font-size: 12px;
   color: $color-gray-bg-text;
+  text-transform: uppercase;
+  letter-spacing: 1px;
 }
 
 .news__content-date::after {

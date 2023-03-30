@@ -4,7 +4,7 @@
 .best__flex {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px;
+  gap: 58px 40px;
 
   @media (max-width: 1360px) {
     justify-content: center;
@@ -12,6 +12,10 @@
 
   @include lg-xx {
     justify-content: center;
+  }
+
+  @include xx {
+    gap: 40px;
   }
 }
 

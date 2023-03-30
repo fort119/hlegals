@@ -3,7 +3,7 @@
 
 .imagination__content {
   display: flex;
-  gap: 42px;
+  gap: 40px;
   align-items: flex-start;
   justify-content: center;
 
@@ -12,6 +12,6 @@
   }
 
   @include xx {
-    gap: 20px;
+    gap: 17px;
   }
 }
